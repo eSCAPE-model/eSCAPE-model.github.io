@@ -217,7 +217,7 @@ python run_eSCAPE.py -i input.yml -v  where the run_eSCAPE.py script takes one r
 </p></div>
         <div>Input files for eSCAPE are based on YAML syntax.
 A typical file will look like this:
-name: Description of the what is going to be done in this simulation... domain: filename: ['data/inputfileparameters.vtu','Z'] flowdir: 1 time: start: 0. end: 1000000. tout: 1000. dt: 100. sea: position: 0. curve: 'data/sealevel.csv' climate: - start: 0. uniform: 1.0 - start: 500000. map: ['data/inputfileparameters.vtu','R'] - start: 500000. uniform: 2.0 tectonic: - start: 0. map: ['data/inputfileparameters.vtu','T1'] - start: 100000.</div>
+name: Description of the what is going to be done in this simulation... domain: filename: ['data/inputfileparameters.vtk','Z'] flowdir: 5 bc: 'slope' time: start: 0. end: 1000000. tout: 1000. dt: 100. sea: position: 0. curve: 'data/sealevel.csv' climate: - start: 0. uniform: 1.0 - start: 500000. map: ['data/inputfileparameters.vtk','R'] - start: 500000. uniform: 2.0 tectonic: - start: 0. map: ['data/inputfileparameters.</div>
     </div>
 </article>
 
