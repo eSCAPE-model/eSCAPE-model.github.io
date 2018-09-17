@@ -6,7 +6,7 @@
     <description>Recent content in Posts on eSCAPE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Tristan Salles - School of Geosciences - The University of Sydney</copyright>
+    <copyright>Author: Tristan Salles - School of Geosciences - The University of Sydney</copyright>
     <lastBuildDate>Fri, 14 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://escape-model.github.io/post/index.xml" rel="self" type="application/rss+xml" />
@@ -44,6 +44,19 @@ name: Description of the what is going to be done in this simulation... domain: 
 A set of examples are available in the eSCAPE-demo repository.
 The easiest way to get started is with the Docker container https://hub.docker.com/u/geodels/ using Kitematic. Once Kitematic is installed on your computer, open it and look for Geodels escape-docker via the search menu.
 If you want to install it yourself, you can follow the steps provided in the wiki page.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://escape-model.github.io/2018/09/contact/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://escape-model.github.io/2018/09/contact/</guid>
+      <description>   To join the eSCAPE User Group on Slack, send an email request to: Join eSCAPE User Group
+follow me on&amp;hellip; Follow @tristan-salles
+Follow @salles_tristan
+orcid.org/0000-0001-6095-7689 
+Tristan Salles </description>
     </item>
     
   </channel>
