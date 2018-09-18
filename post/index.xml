@@ -6,7 +6,7 @@
     <description>Recent content in Posts on eSCAPE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Author: Tristan Salles - School of Geosciences - The University of Sydney</copyright>
+    <copyright>Tristan Salles - School of Geosciences - The University of Sydney</copyright>
     <lastBuildDate>Fri, 14 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://escape-model.github.io/post/index.xml" rel="self" type="application/rss+xml" />
@@ -52,11 +52,12 @@ If you want to install it yourself, you can follow the steps provided in the wik
       <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://escape-model.github.io/2018/09/contact/</guid>
-      <description>   To join the eSCAPE User Group on Slack, send an email request to: Join eSCAPE User Group
-follow me on&amp;hellip; Follow @tristan-salles
+      <description>  To join the eSCAPE User Group on Slack, send an email request to: Join eSCAPE User Group
+For potential collaborations/projects&amp;hellip;
+orcid.org/0000-0001-6095-7689 Follow @tristan-salles
+
 Follow @salles_tristan
-orcid.org/0000-0001-6095-7689 
-Tristan Salles </description>
+Tristan Salles -- </description>
     </item>
     
   </channel>
