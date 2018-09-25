@@ -203,7 +203,9 @@ name: Description of the simulation... domain: filename: [&#39;data/inputfilepar
 </p>
         </div>
         <div class="col s12 m8 offset-m2 l6">
-            <p>Input files for <strong>eSCAPE</strong> are based on <a href="https://circleci.com/blog/what-is-yaml-a-beginner-s-guide/">YAML</a> syntax.</p>
+            
+
+<p>Input files for <strong>eSCAPE</strong> are based on <a href="https://circleci.com/blog/what-is-yaml-a-beginner-s-guide/">YAML</a> syntax.</p>
 
 <p>A typical file will look like this:</p>
 
@@ -283,6 +285,45 @@ output:
 <ul>
 <li><code>output</code>: with <code>dir</code> the directory name and the option <code>makedir</code> that gives the possible to delete any existing output folder with the same name (if set to False) or to create a new folder with the give <code>dir</code> name plus a number at the end (e.g. outputDir_XX if set to True with XX the run number)</li>
 </ul>
+
+<hr />
+
+<h5 id="additional-informations">Additional informations</h5>
+
+<p>The tutorials proposed in the <a href="https://github.com/Geodels/eSCAPE-demo">eSCAPE-demo</a> repository present several examples to create the required <code>vtk</code> input files (used in the input files for the domain, the climate, and the uplift) for running <strong>eSCAPE</strong>.</p>
+
+<p>These input files are defined on an irregular triangular grid (TIN) which is created using either the <a href="https://pypi.org/project/pygmsh/">pyGmsh</a> or <a href="https://pypi.org/project/stripy/">stripy</a> libraries (both install on the Docker container).</p>
+
+<p>In case of spatial change in forcing conditions, the user needs to specify (using the <code>map</code> element) for each vertices of the TIN, a series of fields for each forcing (tectonic displacements and precipitation) at chosen time intervals.</p>
+
+<p>In cases where the forcing conditions are uniform over the entire domain one can chose to define its values in the YAML input file directly using the <code>uniform</code> element.</p>
+
+<p>Sea level position can be set at a given relative position using the <code>position</code> element or using a <code>curve</code> which is a file containing 2 columns (time and sea-level position). In this later case, sea level position at any timestep is obtained by linear interpolation between closest sea level times.</p>
+
+<p>Model-domain edge boundary conditions are set using the <code>bc</code> element in the YAML input file and the following options are available:</p>
+
+<ol>
+<li><code>flat</code>: edges elevations are set to the elevations of the closest non-edge vertices</li>
+<li><code>fixed</code>: edges elevations remain at the same position during the model run<br /></li>
+<li><code>slope</code>: edges elevations are defined based on the closest non-edge vertices average slope</li>
+</ol>
+
+<hr />
+
+<h5 id="outputs-paraview-visualisation">Outputs &amp; Paraview visualisation</h5>
+
+<p>The model outputs are located in the output folder (<code>dir</code> element) and consist of a time series file named <code>eSCAPE.xdmf</code> and 2 other folders (<code>h5</code> and <code>xmf</code>). The <strong>XDMF</strong> file is the main entry point for visualising the output and should be sufficient for most users.</p>
+
+<p>The file can be opened with the <a href="https://www.paraview.org/download/"><strong>Paraview</strong></a> software.</p>
+
+<p>A video is provided in the <a href="https://github.com/Geodels/eSCAPE-demo">eSCAPE-demo</a> repository <strong>test/data</strong> folder and shows how to visualise <strong>eSCAPE</strong> output.</p>
+
+<p>As shown in the video, after loading the file, we perform 2 operations:</p>
+
+<ol>
+<li>first we use the <code>wrap by scalar</code> filter to create a 2D representation of the surface</li>
+<li>then we define a <code>contour</code> line corresponding to the sea-level position</li>
+</ol>
 
 <hr />
 
