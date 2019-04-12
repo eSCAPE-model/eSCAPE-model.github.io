@@ -22,7 +22,7 @@ name: Description of the simulation... domain: filename: [&#39;data/inputfilepar
     <meta name="description" content="">
     <link rel="canonical" href="https://escape-model.github.io/2019/04/input-files/">
 
-    
+
     <title>Input files &middot; eSCAPE</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -30,137 +30,137 @@ name: Description of the simulation... domain: filename: [&#39;data/inputfilepar
 
     <link href="https://escape-model.github.io/css/style.css" rel="stylesheet">
 
-    
 
-    
 
-    
+
+
+
   </head>
   <body>
-    
-      
+
+
 
 
 
 <nav class="white" role="navigation">
     <div class="row max-width">
         <div class="col s12 l10 offset-l1">
-            
+
             <a href="#" data-activates="nav-mobile" class="button-collapse black-text">
                 <i class="material-icons">menu</i>
             </a>
 
-            
+
             <ul id="nav-mobile" class="side-nav">
-                
-                
-    
-        
-            
+
+
+
+
+
 <li>
     <a class="black-text" href="/about/">About...</a>
 </li>
 
-        
-    
-        
-            
+
+
+
+
 <li>
     <a class="black-text" href="/2018/10/contact/">Contact</a>
 </li>
 
-        
-    
-        
+
+
+
             <ul id="dropdown-header-mobile-2" class="dropdown-content">
-                
-                    
+
+
 <li>
     <a class="black-text" href="/2018/11/hands-on-tutorials/">Examples</a>
 </li>
 
-                
-                    
+
+
 <li>
     <a class="black-text" href="/2019/04/input-files/">Input files</a>
 </li>
 
-                
-                    
+
+
 <li>
     <a class="black-text" href="/2018/11/installation/">Installation</a>
 </li>
 
-                
+
             </ul>
             <li>
                 <a class="dropdown-button black-text" href="#!" data-activates="dropdown-header-mobile-2">tutorials
                     <i class="material-icons right">arrow_drop_down</i>
                 </a>
             </li>
-        
-    
-    
+
+
+
 
             </ul>
 
-            
+
             <a href="/" class="brand-logo grey-text text-darken-3">eSCAPE</a>
 
-            
+
             <div class="nav-wrapper">
 
-                
+
                 <ul class="right hide-on-med-and-down">
-                    
-                    
-    
-        
-            
+
+
+
+
+
 <li>
     <a class="black-text" href="/about/">About...</a>
 </li>
 
-        
-    
-        
-            
+
+
+
+
 <li>
     <a class="black-text" href="/2018/10/contact/">Contact</a>
 </li>
 
-        
-    
-        
+
+
+
             <ul id="dropdown-header-desktop-2" class="dropdown-content">
-                
-                    
+
+
 <li>
     <a class="black-text" href="/2018/11/hands-on-tutorials/">Examples</a>
 </li>
 
-                
-                    
+
+
 <li>
     <a class="black-text" href="/2019/04/input-files/">Input files</a>
 </li>
 
-                
-                    
+
+
 <li>
     <a class="black-text" href="/2018/11/installation/">Installation</a>
 </li>
 
-                
+
             </ul>
             <li>
                 <a class="dropdown-button black-text" href="#!" data-activates="dropdown-header-desktop-2">tutorials
                     <i class="material-icons right">arrow_drop_down</i>
                 </a>
             </li>
-        
-    
-    
+
+
+
 
                 </ul>
 
@@ -168,31 +168,31 @@ name: Description of the simulation... domain: filename: [&#39;data/inputfilepar
         </div>
     </div>
 </nav>
-    
 
-    
+
+
 
 <article class="max-width">
-    
+
     <section class="row">
         <div class="col s12 m10 offset-m1 l10 offset-l1">
             <h4>Input files</h4>
         </div>
     </section>
 
-    
-    
+
+
     <div class="row">
         <div class="col s12 m12 l10 offset-l1">
             <div class="article-image" style="background-image: url('https://escape-model.github.io/images/depo_ero.gif');"></div>
         </div>
     </div>
-    
 
-    
+
+
     <section class="row">
         <div class="col s12 m8 offset-m2 l2 offset-l1">
-            
+
 
 <p class="article-meta">
     <div class="article-meta-container">
@@ -203,7 +203,7 @@ name: Description of the simulation... domain: filename: [&#39;data/inputfilepar
 </p>
         </div>
         <div class="col s12 m8 offset-m2 l6">
-            
+
 
 <p>Input files for <strong>eSCAPE</strong> are based on <a href="https://circleci.com/blog/what-is-yaml-a-beginner-s-guide/">YAML</a> syntax.</p>
 
@@ -245,7 +245,7 @@ tectonic:
     - start: 50000.
       map: ['data/inputfileparameters.vtk','T2']
 
-spl_br:
+sp_br:
     Kbr: 1.e-5
 
 sp_dep:
@@ -278,7 +278,7 @@ output:
 <p>Then the parameters for the surface processes to simulate:</p>
 
 <ul>
-<li><code>spl_br</code>: for the <em>stream power law</em> with a unique parameter <code>Kbr</code> representing the The erodibility coefficient which is scale-dependent and its value depend on lithology and mean precipitation rate, channel width, flood frequency, channel hydraulics. It is worth noting that the coefficient <em>m</em> and <em>n</em> are fixed in this version and take the value 0.5 &amp; 1 respectively.</li>
+<li><code>sp_br</code>: for the <em>stream power law</em> with a unique parameter <code>Kbr</code> representing the The erodibility coefficient which is scale-dependent and its value depend on lithology and mean precipitation rate, channel width, flood frequency, channel hydraulics. It is worth noting that the coefficient <em>m</em> and <em>n</em> are fixed in this version and take the value 0.5 &amp; 1 respectively.</li>
 <li><code>diffusion</code>: hillslope and marine diffusion coefficients. <code>hillslopeK</code> sets the <em>simple creep</em> transport law which states that transport rate depends linearly on topographic gradient. The marine sediment are transported based on a diffusion coefficient <code>sedimentK</code>.</li>
 </ul>
 
@@ -336,24 +336,24 @@ output:
 
 
 
-    
+
       <footer class="page-footer grey lighten-5">
     <div class="row max-width">
         <div class="col s12 l10 offset-l1 clear-padding">
             <div class="row">
-    
-        
-    
 
-    
-    
+
+
+
+
+
     <div class="col s12 l12">
         <h5 class="black-text">eSCAPE</h5>
 <p class="grey-text text-darken-4">modelling surface dynamics like never before ...</p>
 
     </div>
 
-    
+
 </div>
 
 
@@ -364,16 +364,16 @@ output:
             <div class="col s12 l10 offset-l1">
                 <span class="grey-text text-darken-4">Tristan Salles - School of Geosciences - The University of Sydney</span>
 <div class="right">
-    
+
 </div>
             </div>
         </div>
     </div>
 </footer>
 
-    
 
-    
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="https://escape-model.github.io/js/script.js"></script>
