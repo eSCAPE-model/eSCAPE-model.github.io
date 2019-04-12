@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <meta property="og:title" content="About..." />
-<meta property="og:description" content="eSCAPE is a parallel TIN-based landscape evolution model, built to simulate topography dynamic at various space and time scales. The model accounts for hillslope processes (soil creep using linear diffusion), fluvial incision (stream power law), spatially and temporally varying tectonics (vertical displacements) and climatic forces (temporal and spatial precipitation changes and/or sea-level fluctuations).
+<meta property="og:description" content="eSCAPE is a parallel TIN-based landscape evolution model, built to simulate topography dynamic at various space and time scales. The model accounts for hillslope processes (soil creep using linear diffusion), fluvial incision (stream power law), spatially and temporally varying tectonics (horizontal and vertical displacements) and climatic forces (temporal and spatial precipitation changes and/or sea-level fluctuations).
 The specs The model is based on the following approaches:
  an adaptation of the implicit, parallelizable method for calculating drainage area for both single (D8) and multiple flow direction (Dinf) from Richardson et al." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://escape-model.github.io/about/" /><meta property="article:published_time" content="2018-09-14T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-09-14T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://escape-model.github.io/about/" /><meta property="article:published_time" content="2019-04-12T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-04-12T00:00:00&#43;00:00"/>
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="About..."/>
-<meta name="twitter:description" content="eSCAPE is a parallel TIN-based landscape evolution model, built to simulate topography dynamic at various space and time scales. The model accounts for hillslope processes (soil creep using linear diffusion), fluvial incision (stream power law), spatially and temporally varying tectonics (vertical displacements) and climatic forces (temporal and spatial precipitation changes and/or sea-level fluctuations).
+<meta name="twitter:description" content="eSCAPE is a parallel TIN-based landscape evolution model, built to simulate topography dynamic at various space and time scales. The model accounts for hillslope processes (soil creep using linear diffusion), fluvial incision (stream power law), spatially and temporally varying tectonics (horizontal and vertical displacements) and climatic forces (temporal and spatial precipitation changes and/or sea-level fluctuations).
 The specs The model is based on the following approaches:
  an adaptation of the implicit, parallelizable method for calculating drainage area for both single (D8) and multiple flow direction (Dinf) from Richardson et al."/>
 
@@ -66,7 +66,7 @@ The specs The model is based on the following approaches:
         
             
 <li>
-    <a class="black-text" href="/2018/09/contact/">Contact</a>
+    <a class="black-text" href="/2018/10/contact/">Contact</a>
 </li>
 
         
@@ -76,19 +76,19 @@ The specs The model is based on the following approaches:
                 
                     
 <li>
-    <a class="black-text" href="/2018/09/hands-on-tutorials/">Examples</a>
+    <a class="black-text" href="/2018/11/hands-on-tutorials/">Examples</a>
 </li>
 
                 
                     
 <li>
-    <a class="black-text" href="/2018/09/input-files/">Input files</a>
+    <a class="black-text" href="/2019/04/input-files/">Input files</a>
 </li>
 
                 
                     
 <li>
-    <a class="black-text" href="/2018/09/installation/">Installation</a>
+    <a class="black-text" href="/2018/11/installation/">Installation</a>
 </li>
 
                 
@@ -126,7 +126,7 @@ The specs The model is based on the following approaches:
         
             
 <li>
-    <a class="black-text" href="/2018/09/contact/">Contact</a>
+    <a class="black-text" href="/2018/10/contact/">Contact</a>
 </li>
 
         
@@ -136,19 +136,19 @@ The specs The model is based on the following approaches:
                 
                     
 <li>
-    <a class="black-text" href="/2018/09/hands-on-tutorials/">Examples</a>
+    <a class="black-text" href="/2018/11/hands-on-tutorials/">Examples</a>
 </li>
 
                 
                     
 <li>
-    <a class="black-text" href="/2018/09/input-files/">Input files</a>
+    <a class="black-text" href="/2019/04/input-files/">Input files</a>
 </li>
 
                 
                     
 <li>
-    <a class="black-text" href="/2018/09/installation/">Installation</a>
+    <a class="black-text" href="/2018/11/installation/">Installation</a>
 </li>
 
                 
@@ -199,13 +199,13 @@ The specs The model is based on the following approaches:
         <div class="article-meta-author-name"></div>
         <div class="article-meta-description"></div>
     </div>
-    <span class="article-meta-published-at grey-text text-darken-1">Sep 14, 2018</span>
+    <span class="article-meta-published-at grey-text text-darken-1">Apr 12, 2019</span>
 </p>
         </div>
         <div class="col s12 m8 offset-m2 l6">
             
 
-<p><strong>eSCAPE</strong> is a parallel TIN-based landscape evolution model, built to simulate topography dynamic at various space and time scales. The model accounts for hillslope processes (soil creep using <em>linear diffusion</em>), fluvial incision (<em>stream power law</em>), spatially and temporally varying tectonics (vertical displacements) and climatic forces (temporal and spatial precipitation changes and/or sea-level fluctuations).</p>
+<p><strong>eSCAPE</strong> is a parallel TIN-based landscape evolution model, built to simulate topography dynamic at various space and time scales. The model accounts for hillslope processes (soil creep using <em>linear diffusion</em>), fluvial incision (<em>stream power law</em>), spatially and temporally varying tectonics (horizontal and vertical displacements) and climatic forces (temporal and spatial precipitation changes and/or sea-level fluctuations).</p>
 
 <h5 id="the-specs">The specs</h5>
 
@@ -213,11 +213,8 @@ The specs The model is based on the following approaches:
 
 <ol>
 <li>an adaptation of the implicit, parallelizable method for calculating drainage area for both single (D8) and multiple flow direction (Dinf) from <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2013WR014326"><strong>Richardson et al. (2014)</strong></a>,</li>
-<li>the extension of the parallel priority-flood algorithm from <a href="https://arxiv.org/abs/1606.06204"><strong>Barnes (2016)</strong></a> to unstructured mesh,</li>
 <li>the methods developed in <a href="https://github.com/badlands-model/pyBadlands_serial"><strong>pyBadlands</strong></a> (<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0195557"><strong>Salles et al. (2018)</strong></a>) for marine sediment distribution.</li>
 </ol>
-
-<p>Learn more on <a href="https://github.com/Geodels/eSCAPE/blob/master/README.md">GitHub</a>.</p>
 
 <h5 id="license">License</h5>
 
